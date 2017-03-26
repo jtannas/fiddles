@@ -3,7 +3,7 @@
 
 Notes:
     - Turns FizzBuzz into a FizzBuzzer function for reuse.
-    - Allows addition of addtional number/word pairs very easily.
+    - Allows addition of additional number/word pairs very easily.
     - Very pythonic; Does not translate readily to other languages.
     - Could be made more compact, but that'd be less readable
     - Nothing is printed until everything is ready.
@@ -11,9 +11,9 @@ Notes:
 
 
 def FizzBuzzer(word_dict: dict, num: int):
-    """Return word(s) if num is divisible by the word key(s), else num
+    """Return word(s) if num is divisible by the word key(s), else num.
 
-    word_dict must be composed of numerical keys and string values"""
+    word_dict must be composed of numerical keys and string values."""
 
     print_buffer = ''
 

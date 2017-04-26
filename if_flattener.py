@@ -75,6 +75,17 @@ class IfCall():
             b = branch(False, self.false_func, self.false_break)
         return b
 
+    @property
+    def inactive_branch(self):
+        """Return the branch that isn't pointed to by self.condition ."""
+        branch = namedtuple('branch', 'condition func break_')
+
+        if self._condition_val is not True:
+            b = branch(False, self.false_func, self.false_break)
+        else:
+            b = branch(True, self.true_func, self.true_break)
+        return b
+
 
 ### EXAMPLE ###################################################################
 def smaller_than(num1, num2):

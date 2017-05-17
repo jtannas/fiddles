@@ -27,7 +27,7 @@ int ASCII_to_index(const char chr) {
 }
 
 bool Create_Word(const char *word, LetterTrie *TrieTrunk) {
-    \\ Add a word to the TrieTrunk.
+    // Add a word to the TrieTrunk.
     
     LetterTrie *Trie = TrieTrunk;
     
@@ -47,7 +47,7 @@ bool Create_Word(const char *word, LetterTrie *TrieTrunk) {
 }
 
 unsigned int Delete_Trie(LetterTrie *Trie) {
-    \\ Recursively free all the nodes in a LetterTrie.
+    // Recursively free all the nodes in a LetterTrie.
     unsigned int failures = 0;
     
     for (int Index = 0; Index < LETTERS; Index++) {
@@ -63,7 +63,7 @@ unsigned int Delete_Trie(LetterTrie *Trie) {
 }
 
 unsigned int check(const char *word, LetterTrie *TrieTrunk) {
-    \\ Return a count of contacts beginning with te given word
+    // Return a count of contacts beginning with te given word
     LetterTrie *Trie = TrieTrunk;
 
     for (int iter = 0; ; iter++)
@@ -82,7 +82,7 @@ unsigned int check(const char *word, LetterTrie *TrieTrunk) {
 }
 
 int main(void) {
-    \\ Perform n operations of add or find on a LetterTrie
+    // Perform n operations of add or find on a LetterTrie
     int n;
     LetterTrie *TrieTrunk = calloc(1, sizeof(LetterTrie));
     scanf("%d",&n);
